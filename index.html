@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aventus Akong — UI/UX & Frontend Developer</title>
+<meta name="description" content="Portfolio Aventus Akong — UI/UX Designer & Frontend Developer berbasis di Malang, Indonesia."/>
+
+<link rel="stylesheet" href="style.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+
+<!-- BLOBS -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- CURSOR -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">Aventus<em>.</em></a>
+
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#contact" style="color:var(--red)">Hire Me →</a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <div class="badge-dot"></div>
+          Available for Freelance &amp; Full-Time
+        </div>
+
+        <h1 class="hero-title reveal reveal-delay-1">
+          Designing<br>
+          Digital<br>
+          <span class="red">Experiences</span>
+        </h1>
+
+        <p class="hero-desc reveal reveal-delay-2">
+          Saya membantu startup dan bisnis membangun produk digital yang modern, elegan, dan berdampak — melalui kombinasi UI/UX design dan frontend engineering.
+        </p>
+
+        <div class="hero-chips reveal reveal-delay-2">
+          <span class="chip">Figma</span>
+          <span class="chip">React</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Tailwind</span>
+        </div>
+
+        <div class="hero-actions reveal reveal-delay-3">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap reveal reveal-delay-2">
+        <img
+          src="img/tampakdepan.png"
+          alt="Aventus Akong"
+          class="hero-photo"
+        />
+        <div class="float-card float-card-1">
+          <div class="float-card-icon">🚀</div>
+          <div>
+            <div class="float-card-num">20+</div>
+            <div class="float-card-lbl">Projects Done</div>
+          </div>
+        </div>
+        <div class="float-card float-card-2">
+          <div class="float-card-icon">⭐</div>
+          <div>
+            <div class="float-card-num">5.0</div>
+            <div class="float-card-lbl">Client Rating</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee-section">
+  <div class="marquee-header">Dipercaya &amp; Berkolaborasi Dengan</div>
+  <div class="marquee-track" id="marqueeTrack">
+
+    <!-- Set 1 -->
+    <div class="marquee-item"><div class="m-logo">🟢</div><div><div class="m-name">Gojek</div><div class="m-type">Super App</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟠</div><div><div class="m-name">Tokopedia</div><div class="m-type">E-Commerce</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔴</div><div><div class="m-name">Telkom Indonesia</div><div class="m-type">Telekomunikasi</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔵</div><div><div class="m-name">Traveloka</div><div class="m-type">Travel Tech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟡</div><div><div class="m-name">Dana</div><div class="m-type">Digital Wallet</div></div></div>
+    <div class="marquee-item"><div class="m-logo">⚫</div><div><div class="m-name">Bukalapak</div><div class="m-type">E-Commerce</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟤</div><div><div class="m-name">Ruangguru</div><div class="m-type">EdTech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔷</div><div><div class="m-name">BRI Digital</div><div class="m-type">Fintech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟣</div><div><div class="m-name">Akulaku</div><div class="m-type">Fintech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔴</div><div><div class="m-name">Grab Indonesia</div><div class="m-type">Mobility</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔵</div><div><div class="m-name">Google DevGroup</div><div class="m-type">Community</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟢</div><div><div class="m-name">Kredivo</div><div class="m-type">BNPL Tech</div></div></div>
+
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <div class="marquee-item"><div class="m-logo">🟢</div><div><div class="m-name">Gojek</div><div class="m-type">Super App</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟠</div><div><div class="m-name">Tokopedia</div><div class="m-type">E-Commerce</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔴</div><div><div class="m-name">Telkom Indonesia</div><div class="m-type">Telekomunikasi</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔵</div><div><div class="m-name">Traveloka</div><div class="m-type">Travel Tech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟡</div><div><div class="m-name">Dana</div><div class="m-type">Digital Wallet</div></div></div>
+    <div class="marquee-item"><div class="m-logo">⚫</div><div><div class="m-name">Bukalapak</div><div class="m-type">E-Commerce</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟤</div><div><div class="m-name">Ruangguru</div><div class="m-type">EdTech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔷</div><div><div class="m-name">BRI Digital</div><div class="m-type">Fintech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟣</div><div><div class="m-name">Akulaku</div><div class="m-type">Fintech</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔴</div><div><div class="m-name">Grab Indonesia</div><div class="m-type">Mobility</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🔵</div><div><div class="m-name">Google DevGroup</div><div class="m-type">Community</div></div></div>
+    <div class="marquee-item"><div class="m-logo">🟢</div><div><div class="m-name">Kredivo</div><div class="m-type">BNPL Tech</div></div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Expertise</div>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <p class="section-desc">Fokus pada pengalaman digital modern, frontend development yang scalable, dan design yang berdampak.</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="sk-icon">🎨</div>
+        <h3>UI Design</h3>
+        <p>Interface modern dengan visual premium, clean layout, dan perhatian penuh pada detail micro-interaction.</p>
+        <div class="skill-tags"><span class="sk-tag">Figma</span><span class="sk-tag">Design System</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="sk-icon">⚛️</div>
+        <h3>React &amp; Next.js</h3>
+        <p>Membangun aplikasi frontend modern yang performant, SEO-friendly, dan maintainable.</p>
+        <div class="skill-tags"><span class="sk-tag">React</span><span class="sk-tag">Next.js</span><span class="sk-tag">TypeScript</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="sk-icon">📱</div>
+        <h3>Responsive &amp; Mobile</h3>
+        <p>Optimal di semua device — dari mobile 320px hingga layar 4K, pixel-perfect di setiap breakpoint.</p>
+        <div class="skill-tags"><span class="sk-tag">Tailwind</span><span class="sk-tag">CSS</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-4">
+        <div class="sk-icon">🔍</div>
+        <h3>UX Research</h3>
+        <p>User journey mapping, usability testing, dan data-driven design untuk pengalaman yang intuitif.</p>
+        <div class="skill-tags"><span class="sk-tag">User Testing</span><span class="sk-tag">Wireframe</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Featured Work</div>
+      <h2 class="section-title">Selected Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="proj-img">
+          <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=800&auto=format&fit=crop" alt="E-Commerce Dashboard"/>
+          <div class="proj-overlay"><div class="proj-view-btn">View Project →</div></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Dashboard · Analytics</div>
+          <h3>E-Commerce Platform</h3>
+          <p>Dashboard analytics modern dengan real-time reporting dan UX yang efisien untuk admin e-commerce.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Next.js</span>
+            <span class="proj-tag">Figma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="proj-img">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop" alt="Healthcare App"/>
+          <div class="proj-overlay"><div class="proj-view-btn">View Project →</div></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">Mobile App · Healthcare</div>
+          <h3>Healthcare App UI</h3>
+          <p>Mobile healthcare dengan sistem booking dokter, rekam medis digital, dan modern user flow.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">UI/UX</span>
+            <span class="proj-tag">Prototype</span>
+            <span class="proj-tag">Mobile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="proj-img">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="SaaS Platform"/>
+          <div class="proj-overlay"><div class="proj-view-btn">View Project →</div></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-type">SaaS · Web App</div>
+          <h3>Startup Web Platform</h3>
+          <p>Frontend modern untuk startup SaaS dengan scalable architecture dan performa tinggi.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">TypeScript</span>
+            <span class="proj-tag">Tailwind</span>
+            <span class="proj-tag">Performance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROCESS ══════════ -->
+<section id="process">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Workflow</div>
+      <h2 class="section-title">Design Process</h2>
+      <p class="section-desc">Pendekatan yang terstruktur untuk hasil yang konsisten dan berkualitas tinggi.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card reveal reveal-delay-1">
+        <div class="process-num">01</div>
+        <div class="process-step-icon">🔎</div>
+        <h3>Discovery</h3>
+        <p>Memahami kebutuhan bisnis, target pengguna, dan konteks masalah secara mendalam.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-2">
+        <div class="process-num">02</div>
+        <div class="process-step-icon">📐</div>
+        <h3>Wireframe</h3>
+        <p>Membuat struktur informasi dan user flow sebelum masuk ke visual design.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-3">
+        <div class="process-num">03</div>
+        <div class="process-step-icon">✨</div>
+        <h3>Design</h3>
+        <p>Mendesain interface yang clean, elegan, dan intuitive dengan design system yang konsisten.</p>
+      </div>
+      <div class="process-card reveal reveal-delay-4">
+        <div class="process-num">04</div>
+        <div class="process-step-icon">⚡</div>
+        <h3>Development</h3>
+        <p>Membangun frontend yang responsive, performant, dan siap production.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container about-grid">
+
+    <div class="about-img-wrap reveal">
+      <img
+        src="img/gsa.jpeg"
+        alt="Aventus Akong"
+        class="about-img"
+      />
+      <div class="about-accent">
+        <div class="about-accent-num">3+</div>
+        <div class="about-accent-lbl">YEARS<br>EXP</div>
+      </div>
+    </div>
+
+    <div class="about-content reveal reveal-delay-2">
+      <div class="eyebrow">About Me</div>
+      <h2 class="section-title">Building Products<br>People Love</h2>
+
+      <p>Saya <strong>Aventus Akong</strong> — UI/UX Designer & Frontend Developer berbasis di Malang, Indonesia. Saya percaya bahwa desain yang baik bukan hanya tentang estetika, tapi tentang bagaimana pengguna merasakan setiap interaksi.</p>
+
+      <p>Dengan pengalaman di Google Developer Group dan berbagai proyek freelance, saya telah membantu bisnis bertransformasi digital dengan interface yang elegan dan fungsional.</p>
+
+      <div class="about-list">
+        <div class="about-item">
+          <div class="about-item-icon">🎨</div>
+          <span class="label">Modern UI Design yang premium &amp; clean</span>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon">⚛️</div>
+          <span class="label">Frontend Engineering yang scalable</span>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon">🔍</div>
+          <span class="label">UX Problem Solving berbasis riset</span>
+        </div>
+        <div class="about-item">
+          <div class="about-item-icon">🚀</div>
+          <span class="label">Google Developer Group — UI/UX Lead</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <div class="eyebrow" style="justify-content:center;">Let's Connect</div>
+      <h2>Let's Build Something<br>People Love to Use</h2>
+      <p>Available untuk freelance project, startup collaboration, dan full-time opportunities. Mari wujudkan ide kamu!</p>
+      <div class="contact-actions">
+        <a href="mailto:aventus@email.com" class="btn btn-primary">✉ Email Me</a>
+        <a href="https://github.com" target="_blank" class="btn btn-outline">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" class="btn btn-outline">LinkedIn</a>
+        <a href="https://instagram.com" target="_blank" class="btn btn-outline">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container footer-inner">
+    <a href="#" class="logo" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;">
+      Aventus<em style="color:var(--red);font-style:normal;">.</em>
+    </a>
+    <p>© 2026 Aventus Akong — UI/UX &amp; Frontend Developer · Malang, Indonesia</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
